@@ -1,0 +1,16 @@
+db:
+  build: machines/db
+  ports:
+    - 3301:3306
+  environment:
+    - MYSQL_USER=admin
+    - MYSQL_PASS=admin
+web:
+  build: machines/web
+  links:
+    - db
+  ports:
+    - 8080:80
+  volumes:
+    - ./application:/var/www/html
+
