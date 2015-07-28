@@ -8,6 +8,8 @@ else
     a2enmod rewrite
 fi
 
+a2enmod ssl
+
 source /etc/apache2/envvars
 
 tail -F /var/log/apache2/* &
