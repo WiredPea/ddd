@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER WiredPea <noe@wiredpea.com>
+MAINTAINER WiredPea <hi@wiredpea.com>
 
 # Install base packages
 RUN apt-get update && \
